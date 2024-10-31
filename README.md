@@ -1,13 +1,56 @@
-# Compiler Lab Code Repository
+# Compiler Lab Programs
 
-Welcome to the Compiler Lab Code Repository! This repository contains the source code and documentation for various components and functionalities of a compiler system. The project is designed to provide a practical understanding of compiler construction and includes several key elements integral to building a compiler.
+This repository contains a collection of programs for a compiler lab course. Each program is designed to demonstrate various compiler construction techniques, such as lexical analysis and parsing, using tools like **Lex**.
 
-The code in this repository includes implementations of core compiler phases such as lexical analysis, syntax analysis, and code generation. The lexical analyzer reads source code and breaks it into tokens, identifying keywords, operators, constants, identifiers, and symbols. The syntax analyzer checks the arrangement of these tokens to ensure they conform to the grammatical rules of the programming language, effectively constructing a parse tree or abstract syntax tree.
+## Table of Contents
+- [About](#about)
+- [Programs](#programs)
+- [Installation](#installation)
+  - [Installing Lex](#installing-lex)
+    - [Windows](#windows)
+    - [Linux](#linux)
+    - [macOS](#macos)
+- [Usage](#usage)
 
-Additionally, the repository features components for managing the symbol table, which keeps track of variable names, their types, and scopes throughout the compilation process. Code generation functionalities are also included, translating intermediate representations into executable code or other lower-level formats that can be run on a computer.
+## About
 
-This repository aims to provide a comprehensive understanding of compiler design and implementation. Each component is crafted to illustrate fundamental concepts and techniques used in compiler construction, making it an invaluable resource for students and professionals alike.
+Lex is a tool used to generate lexical analyzers, also known as "scanners" or "tokenizers." It reads a file containing lexical rules and generates C code that can identify tokens based on those rules. This repository includes several programs that use Lex to analyze and process input files as part of a compiler construction workflow.
 
-To get started, you can clone the repository, compile the code, and explore the various functionalities implemented. Contributions and improvements are encouraged, and detailed instructions for contributing can be found in the repository. 
+## Programs
 
-Feel free to explore the code, experiment with different features, and enhance the repository with your own implementations and improvements. Happy coding!
+1. **Lexical Analyzer for Arithmetic Expressions**  
+   This program reads an expression and breaks it down into operators, identifiers, and constants.
+
+2. **Identifier Validation**  
+   A lexical analyzer program that checks if a given input string is a valid identifier in C.
+
+3. **Preprocessor Directive Recognizer**  
+   Recognizes C preprocessor directives (e.g., `#include`, `#define`) in a file.
+
+... (Include other programs as relevant to your repository)
+
+## Installation
+
+### Installing Lex
+
+Lex is widely used on Unix-like systems, and can be installed as follows on different platforms:
+
+#### Windows
+
+Lex isn't natively supported on Windows, but you can use **Cygwin** or **WSL (Windows Subsystem for Linux)** to run Lex.
+
+1. **Using Cygwin**:
+   - Install [Cygwin](https://www.cygwin.com/) and select `flex` (a Lex-compatible tool) during setup.
+   - Open Cygwin and confirm installation by running `flex --version`.
+
+2. **Using WSL**:
+   - Enable WSL and install a Linux distribution from the Microsoft Store.
+   - Open the Linux terminal and install Flex using the Linux installation commands below.
+
+#### Linux
+
+Most Linux distributions offer `flex` as the standard tool for Lex.
+
+```bash
+sudo apt-get update      # For Debian/Ubuntu-based distributions
+sudo apt-get install flex
