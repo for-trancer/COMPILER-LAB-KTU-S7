@@ -67,14 +67,14 @@ void constant()
 				case '=': 
 					res = op1; 
 					break; 
-		} 
+			} 
 		    
 		sprintf(res1, "%d", res); 
 		arr[i].flag = 1; 
 		    
 		change(i, res1); 
         
-        } 
+        	} 
     } 
 } 
 
