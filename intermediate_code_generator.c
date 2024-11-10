@@ -11,7 +11,7 @@ int isop(char ch)
 		case '+':
 		case '-':
 		case '*':
-		case '\':
+		case '/':
 		case '%':
 		case '(':
 		case ')':
